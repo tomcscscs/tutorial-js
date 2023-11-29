@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>함수정의하기</title>
+</head>
+
+<body>
+	test();
+	console.log(test());
+
+
+
+	<script>
+
+
+		function test() {
+			console.log("great");
+
+		}
+		test();
+
+
+		function print(t) {
+			console.log(typeof t);
+
+		}
+
+		print(1);
+
+		print(2, 3, 4, 5);
+
+		const max = function (a, b) {
+
+			return a > b ? a : b;
+
+		}
+
+		console.log(max(5, 8));
+
+		var a = {
+
+			name: "윤형호",
+			age: 43
+		};
+
+		console.log(a.name);
+		console.log(a.age);
+		
+		a.gender='남';
+		console.log(a);
+		
+
+
+
+
+
+
+
+
+	</script>
+
+</body>
+
+</html>
