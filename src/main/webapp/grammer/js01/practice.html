@@ -31,9 +31,9 @@
 			{name: '사과', calorie: 52.1},
 			{name: '수박', calorie: 30.4},
 			{name: '바나나', calorie: 88.7}
-		];
+		];  
 		
-		const $ul =document.createElement("ul"); <!--일단 엘리먼트를 생성해서 집어넣기-->
+		const $ul =document.createElement("ul"); 
 		for(let one of fruits){
 			let $li = document.createElement("li");
 			let $text =document.createTextNode(one.name +"(" + one.calorie + "Kcal)");

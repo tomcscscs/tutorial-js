@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>체크박스</title>
+</head>
+
+<body>
+	<h1>체크박스 가지고 놀기</h1>
+	<p>
+		이번 던전 탐험에 참가시킬 직군을 고르세요 (최소2명 ~ 최대 3명)
+	</p>
+	<form>
+		<div style="display:flex; margin-bottom: 20px;">
+			<div style="display:flex; align-items: center;">
+				<input type="checkbox" name="role" class="role" value="전사" id="warrior" />
+				<label for="warrior">전사</label>
+			</div>
+			<div style="display:flex; align-items: center;">
+				<input type="checkbox" name="role" class="role" value="성기사" id="paladin" />
+				<label for="paladin">성기사</label>
+			</div>
+			<div style="display:flex; align-items: center;">
+				<input type="checkbox" name="role" class="role" value="도적" id="thief" />
+				<label for="thief">도적</label>
+			</div>
+			<div style="display:flex; align-items: center;">
+				<input type="checkbox" name="role" class="role" value="마법사" id="sorcerer" />
+				<label for="sorcerer">마법사</label>
+			</div>
+			<div style="display:flex; align-items: center;">
+				<input type="checkbox" name="role" class="role" value="현자" id="wizard" />
+				<label for="wizard">현자</label>
+			</div>
+			<div style="display:flex; align-items: center;">
+				<input type="checkbox" name="role" class="role" value="성직자" id="cleric" />
+				<label for="cleric">성직자</label>
+			</div>
+		</div>
+		<div>
+			결정하셧나요? <button>출발!</button>
+		</div>
+	</form>
+	<script>
+		[...document.querySelectorAll(".role")].forEach(function(elm){
+			elm.addEventListener("click", function(evt){
+				console.log(evt.target.checked , evt.target.value);
+			});
+		});
+		
+		
+		
+	</script>
+</body>
+
+</html>
