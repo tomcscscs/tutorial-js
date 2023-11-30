@@ -21,6 +21,33 @@
 		
 	</script>
 	
+	<script>
+		const fruits=[
+		{name:"가지", calorie:24.9},
+		{name:"사과", calorie:24.9},
+		{name:"배", calorie:24.9},
+		{name:"귤", calorie:24.9},
+		];
+		
+		const $ul =document.createElement("ul");
+		for(let one of fruits){
+			let $li =document.createElement("li");
+			let $text =document.createTextNode(one.name +"/"+one.calorie);
+			
+			$li.appendChild($text);
+			$ul.appendChild($li);
+			
+		}
+		document.querySelector("#result").appendChild($ul);
+		
+		
+		
+		
+		
+		
+		
+	</script>
+	
 	
 		
 		
