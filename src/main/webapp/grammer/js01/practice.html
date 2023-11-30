@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+</head>
+
+<body>
+	<h1>DOM 변경 연습</h1>
+	<div>
+		자바스크립트의 객체배열을 HTML화 해보기
+	</div>
+	<h3>과일 100g 당 칼로리</h3>
+	<p>크리에이트 엘리먼트를 먼저 사용해보자. </p>
+	<p>저 객체를 li로 바꾸기. </p>
+	
+	<div id="result">
+		
+	</div>
+		
+	
+
+
+
+	
+
+	<script>
+		const fruits = [
+			{name: '가지', calorie: 24.9},
+			{name: '사과', calorie: 52.1},
+			{name: '수박', calorie: 30.4},
+			{name: '바나나', calorie: 88.7}
+		];
+		
+		const $ul =document.createElement("ul"); <!--일단 엘리먼트를 생성해서 집어넣기-->
+		for(let one of fruits){
+			let $li = document.createElement("li");
+			let $text =document.createTextNode(one.name +"(" + one.calorie + "Kcal)");
+			
+			$li.appendChild($text);
+			$ul.appendChild($li);
+			
+		}
+		document.querySelector("#result").appendChild($ul);
+		
+		
+
+
+	</script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
